@@ -1,2 +1,2 @@
-  ### install
-  `apt-get install git`
+### Install
+-`apt-get install git`

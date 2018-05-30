@@ -1,2 +1,5 @@
 ### Install
--`apt-get install git`
+- `$ apt-get install git`
+### Clone 
+- `$ git clone repo`
+

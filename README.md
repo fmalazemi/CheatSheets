@@ -1,1 +1,2 @@
 - [vim](vim.md)
+- [bash](bash.md)

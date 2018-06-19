@@ -2,7 +2,7 @@
 - `find . -name fileName` 
 - `find /home -user exampleuser -mtime 7 -iname ".db`   ---- Find all .db files (ignoring text case) modified in the last 7 days by a user named exampleuser.
 ### grep
-- `grep -rnw 'PATH' -e 'pattern'``
+- `grep -rnw 'PATH' -e 'pattern'`
   - `-r` recursive 
   - `-n` show line number in output
   - `-w` match the whole word

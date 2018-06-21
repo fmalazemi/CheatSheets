@@ -11,5 +11,8 @@
   - `PATH` start from this path
 
 ### top 
-- `top -p PID`  
+- `top -p PID`  ---- show statistics and usage information related to PID only. 
+### SCP 
+- `scp [sourceUser@SourceAddreess]:SourcePath [destUser@destAddress]:destPath` 
+- `scp alazemif@xyz.com:/scratch/dump.txt .` --- copy file dump.txt from xyz.com server to current working directory. 
 

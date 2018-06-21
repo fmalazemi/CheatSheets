@@ -15,4 +15,9 @@
 ### SCP 
 - `scp [sourceUser@SourceAddreess]:SourcePath [destUser@destAddress]:destPath` 
 - `scp alazemif@xyz.com:/scratch/dump.txt .` --- copy file dump.txt from xyz.com server to current working directory. 
+### screen 
+This command helps to open a new shell that can be active and running even after user logs out. 
+- `screen` -- open a new shell
+- `screen -r [PID]` --- resume a currently running shell, if more than one screen shell is running select specific PID. 
+- `screen -d` --- detach the current working screen and back to parent shell prompt. 
 

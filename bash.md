@@ -20,4 +20,8 @@ This command helps to open a new shell that can be active and running even after
 - `screen` -- open a new shell
 - `screen -r [PID]` --- resume a currently running shell, if more than one screen shell is running select specific PID. 
 - `screen -d` --- detach the current working screen and back to parent shell prompt. 
+### output redirection
+- `command > file` --- if file does not exists, create and redirect output. If file exists, raise an exception. 
+- `command >> file` --- if file exists append, o.w. create a new file. 
+- `command >! file` --- Delete the content of the file and redirect the output. 
 

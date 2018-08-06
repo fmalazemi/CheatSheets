@@ -11,7 +11,8 @@
   - `PATH` start from this path
 
 ### top 
-- `top -p PID`  ---- show statistics and usage information related to PID only. 
+- `top -p PID`  show statistics and usage information related to PID only. 
+- `top -U username` Show processes currently running by the 
 ### scp 
 - `scp [sourceUser@SourceAddreess]:SourcePath [destUser@destAddress]:destPath` 
 - `scp user@xyz.com:/scratch/dump.txt .` --- copy file dump.txt from xyz.com server to current working directory. 

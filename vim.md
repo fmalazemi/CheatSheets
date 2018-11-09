@@ -2,6 +2,7 @@
 - <kbd>esc</kbd> : `Exit insert mode`
 - <kbd>:</kbd><kbd>q</kbd><kbd>!</kbd>  : `quit without saving`
 - <kbd>Z</kbd><kbd>Z</kbd> `or` <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd>  : `write and quit`
+- <kbd>:noh</kbd> : `clear highlighted until next search.`
 
 ## Search, Replace
 - <kbd>/</kbd><kbd>text</kbd>,<kbd>n</kbd> : `search forward`, `next match`

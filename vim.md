@@ -1,5 +1,4 @@
 ## General
-- <kbd>i</kbd>  : `insert mode`
 - <kbd>esc</kbd> : `Exit insert mode`
 - <kbd>:</kbd><kbd>q</kbd><kbd>!</kbd>  : `quit without saving`
 - <kbd>Z</kbd><kbd>Z</kbd> `or` <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd>  : `write and quit`
@@ -11,6 +10,8 @@
 ## Insert 
 - <kbd>i</kbd>  : `before cursor`
 - <kbd>a</kbd>  : `after cursor`
+- <kbd>I</kbd>  : `cursor to beginning of the line` 
+- <kbd>A</kbd>  : `cursor to end of line`
 
 ## Delete
 - <kbd>x</kbd>  : `delete char`

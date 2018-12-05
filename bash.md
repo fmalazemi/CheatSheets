@@ -1,7 +1,8 @@
 ### find
 - `find . -name fileName` 
 - `find /home -user exampleuser -mtime 7 -iname ".db`   ---- Find all .db files (ignoring text case) modified in the last 7 days by a user named exampleuser.
-### grep
+
+### grep (search a file for a pattern)
 - `grep -rnw 'PATH' -e 'pattern'`
   - `-r` recursive 
   - `-n` show line number in output
@@ -9,6 +10,10 @@
   - `-i` ignore case
   - `-e` pattern you would like to search 
   - `PATH` start from this path
+
+### pgrep (look up or signal processes based on name and other attributes)
+- `pgrep P_NAME` --- print process IDs that include "P_NAME" in the command. Each on a seperate line. 
+- `pgrep -d "," P_NAME"` --- print process IDs that include "P_NAME" in the command. Concatinate ID with ",". 
 
 ### top 
 - `top -p PID` --- show statistics and usage information related to PID only. 

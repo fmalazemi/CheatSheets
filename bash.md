@@ -11,8 +11,9 @@
   - `PATH` start from this path
 
 ### top 
-- `top -p PID`  show statistics and usage information related to PID only. 
-- `top -U username` Show processes currently running by the 
+- `top -p PID` --- show statistics and usage information related to PID only. 
+- ``top -p `pgrep -d "," P_NAME` `` --- Show processes that include "P_NAME" in the command.  
+- `top -U username` --- qShow processes currently running by the 
 ### scp 
 - `scp [sourceUser@SourceAddreess]:SourcePath [destUser@destAddress]:destPath` 
 - `scp user@xyz.com:/scratch/dump.txt .` --- copy file dump.txt from xyz.com server to current working directory. 
@@ -25,4 +26,5 @@ This command helps to open a new shell that can be active and running even after
 - `command > file` --- if file does not exists, create and redirect output. If file exists, raise an exception. 
 - `command >> file` --- if file exists append, o.w. create a new file. 
 - `command >! file` --- Delete the content of the file and redirect the output. 
+
 

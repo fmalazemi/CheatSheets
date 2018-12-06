@@ -32,4 +32,9 @@ This command helps to open a new shell that can be active and running even after
 - `command >> file` --- if file exists append, o.w. create a new file. 
 - `command >! file` --- Delete the content of the file and redirect the output. 
 
-
+### Disk space usage
+- `du`
+  - `-s` --- summarize disk usage for the current working directory. 
+  - `-h` --- convert disk space to humen format (e.g. 1GB)
+  - `-c` --- Sum all calculated disk usage and print total on the last line.  
+- `du -csh .` --- example: calculate disk usage of all files and dir in '.' directory and print total at the end.  

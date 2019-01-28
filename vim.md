@@ -19,6 +19,7 @@
 - <kbd>I</kbd>  : `cursor to beginning of the line` 
 - <kbd>A</kbd>  : `cursor to end of line`
 - <kbd>o</kbd>  : `Add new line after the current one`
+- <kbd>O</kbd>  : `Add new line Before the current one`
 ## Delete
 - <kbd>x</kbd>  : `delete char`
 - <kbd>X</kbd>  : `delete backspace`

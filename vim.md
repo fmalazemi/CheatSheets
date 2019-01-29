@@ -8,6 +8,7 @@
 ## Navigate
 - <kbd>gg</kbd> : `go to the begining of file`
 - <kbd>G</kbd> : `Go to the end of file`
+- <kbd>%</kbd> : `If cursor on a bracket, % jumps to the closing/opening bracket`
 
 ## Search, Replace
 - <kbd>/</kbd><kbd>text</kbd>,<kbd>n</kbd> : `search forward`, `next match`
@@ -23,3 +24,8 @@
 ## Delete
 - <kbd>x</kbd>  : `delete char`
 - <kbd>X</kbd>  : `delete backspace`
+
+## Copy/Paste
+- <kbd>V</kbd>  : `Select multiple lines`
+- <kbd>y</kbd>  : `Copy selected area`
+- <kbd>p</kbd>  : `paste`

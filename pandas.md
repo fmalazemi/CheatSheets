@@ -1,14 +1,12 @@
        
----
-Table
----
+# 👆🏼 Table A
 |   | Animal |
 |---|--------|
 | 0 | Dog    |
 | 3 | Cat    |
 | 1 | wofl   |
 | 2 | tiger  |
-# 👆🏼 Table A
+
 
 
 ### Slicing

@@ -1,9 +1,9 @@
-
-|   | Animal|
-|---|-------|
-| 0 | Dog   |
-| 2 | Cat   |
-| 1 | camel |
+       
+        |   | Animal|
+        |---|-------|
+Table A | 0 | Dog   |
+        | 2 | Cat   |
+        | 1 | camel |
 
 
 

@@ -1,10 +1,10 @@
 ### 👇🏼 Table A
-|   | Animal |
-|---|--------|
-| 0 | Dog    |
-| 3 | Cat    |
-| 1 | wofl   |
-| 2 | tiger  |
+|   | Animal  | Exp. Age| 
+|---|-------- | ------- | 
+| 0 | Dog     | 10      | 
+| 3 | Cat     | 15      |
+| 1 | Wolf    | 7       | 
+| 2 | Tiger   | 12      |
 
 
 

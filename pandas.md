@@ -15,5 +15,11 @@
   - `A.loc[0:3]` return first two rows. NOT the whole A. i.e. `A.loc[0:3] = A.iloc[0:2]`.
   - **CAUTION**: If labels are integers and not in-order then `iloc[]` and `loc[]` give different outputs. 
 ### idxmax
-- `.idxmax()` returns the index largest values in a series (or column.) 
-  -`A['ExpAge'].idxmax()` returns 1 for cat. 
+- 
+  
+### Misc
+- `.idxmax()` returns the index label largest values in a series (or column.) 
+  -`A['ExpAge'].idxmax()` returns label 3 for cat. 
+- `.mean()` 
+- `.median()`
+- `.apply(func, arg*)` Similar to built-in `map` but on dataFrames instead.  

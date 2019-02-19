@@ -1,9 +1,10 @@
        
-        |   | Animal|
-        |---|-------|
-Table A | 0 | Dog   |
-        | 2 | Cat   |
-        | 1 | camel |
+|   | Animal |
+|---|:------:|
+| 0 | Dog    |
+| 3 | Cat    |
+| 1 | wofl   |
+| 2 | tiger  |
 
 
 

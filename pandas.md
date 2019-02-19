@@ -5,12 +5,12 @@
 | 3 | Cat    |
 | 1 | wofl   |
 | 2 | tiger  |
-
+### This is Table A
 
 
 ### Slicing
 - `.iloc[]` takes only integers and similar to list slicing. 
-  - `A.iloc[x:y]` select everything between `x` and `y-1`. 
+  - `A.iloc[0:3]` return the whole table above. 
 
 
 - `.loc[]` takes label only and slice based on given label values.

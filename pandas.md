@@ -5,7 +5,7 @@
 | 3 | Cat    |
 | 1 | wofl   |
 | 2 | tiger  |
-### This is Table A
+### 👆 Table A
 
 
 ### Slicing

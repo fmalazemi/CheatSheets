@@ -45,3 +45,18 @@ for i in range(3):
 [1, 2]
 [4, 4]
 ```
+## filter(func, iterables)
+For a given boolean function func and iterables, create a list of elements e1, e2, ..., en such that func(ei) == true. 
+Filter return an iterator of the created list. 
+```
+def isOdd(x):
+    return x % 2 != 0
+lst = [x for x in range(11)]
+print(lst)
+result = list( filter(isOdd, lst))
+print(result)
+```
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[1, 3, 5, 7, 9]
+```

@@ -68,6 +68,7 @@ print(even_lst)
 ## reduce(func, iterable)
 Perform computation on the iterable and return a single element (not iterable.) 
 For a given list `lst = [1,2,3,4]` and `func(x,y)` that returns the sum `x+y`, `reduce` will roll the computation as `reduce(func, lst) = func(func(func(1, 2), 3), 4) = 10`
+`reduce` is not a built-in function it is part of `functools`. 
 ```python
 from functools import reduce
 lst = list(range(1, 10))

@@ -2,7 +2,8 @@
 
 ## map(func, iterables)
 Apply func to the given iterable(s) and return an iterator. The number of iterables depends on func parameters. 
-`def square(x):
+```python
+def square(x):
     return x**2
 lst = [1,2,3,4]
 sq_lst = list(map(square, lst))

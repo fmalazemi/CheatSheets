@@ -2,6 +2,7 @@
 
 ## map(func, iterables)
 Apply func to the given iterable(s) and return an iterator. The number of iterables depends on func parameters. 
+`map` is a built-in function. 
 ```python
 def square(x):
     return x**2
@@ -45,9 +46,10 @@ for i in range(3):
 [1, 2]
 [4, 4]
 ```
-## filter(func, iterables)
-For a given boolean function func and iterables, create a list of elements e1, e2, ..., en such that func(ei) == true. 
+## filter(func, iterable)
+For a given boolean function func and an iterable, create a list of elements e1, e2, ..., en such that func(ei) == true. 
 Filter return an iterator of the created list. 
+`filter` is a built-in function. 
 ```python
 def isOdd(x):
     return x % 2 != 0
@@ -63,5 +65,5 @@ print(even_lst)
 [1, 3, 5, 7, 9]
 [0, 2, 4, 6, 8, 10]
 ```
-
+## reduce(func, iterable)
 

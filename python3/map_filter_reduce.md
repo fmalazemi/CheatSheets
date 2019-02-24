@@ -66,4 +66,7 @@ print(even_lst)
 [0, 2, 4, 6, 8, 10]
 ```
 ## reduce(func, iterable)
+Perform computation on the iterable and return a single element (not iterable.) 
+For a given list [1,2,3,4]
+
 

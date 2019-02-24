@@ -10,4 +10,10 @@ sq_lst = list(map(square, lst))
 print(sq_lst)
 
 sq_lst2 = list(map(lambda x : x**2, lst))
-print(sq_lst2)`
+print(sq_lst2)
+```
+```output
+fdos 
+okfdsk
+fkdos 
+```

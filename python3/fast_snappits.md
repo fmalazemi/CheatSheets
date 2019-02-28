@@ -6,11 +6,11 @@ Below are several performance benchmarks between different implementations for t
 4.  [Permission or Forgiveness 1](#Permission-or-Forgiveness-1)
 5.  [Permission or Forgiveness 2](#Permission-or-Forgiveness-2)
 6.  [Membership testing](#Membership-testing)
-7.  [`float()` vs `*1.0`](#`float()`-vs-`*1.0`)
+7.  [`float()` vs `*1.0`](#float()-vs-*1.0)
 8.  [Remove Duplicates](#Remove-Duplicates)
 9.  [Sorting](#Sorting)
 10. [Checking for True](#Checking-for-True)
-11. [`list()` or `[]`, `dict()` or `{}`](#`list()`-or-`[]`,-`dict()`-or-`{}`)
+11. [`list()` or `[]`, `dict()` or `{}`](#list()-or-[],-dict()-or-{})
 ### `timeit` setup and configuration
 
 #### Example code for `timeit`

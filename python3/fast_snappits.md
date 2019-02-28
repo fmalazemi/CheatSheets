@@ -1,17 +1,17 @@
 # Fast Snappits
 Below are several performance benchmarks between different implementations for the same task in Python 3 (version 3.6.1). Most of the snappits are extracted from the [Youtube lecture by Sebastian Witowski](https://www.youtube.com/watch?v=YjHsOrOOSuI&t=611s). 
 
-1.  [`timeit` setup configuration](#1.-timeit-setup-and-configuration)
-2.  [Count elements in a list](#2.-Count-elements-in-a-list)
-3.  [Fliter List](#3.-Fliter-List)
-4.  [Permission or Forgiveness 1](#4.-Permission-or-Forgiveness-1)
-5.  [Permission or Forgiveness 2](#5.-Permission-or-Forgiveness-2)
-6.  [Membership testing](#6.-Membership-testing)
-7.  [`float()` vs `*1.0`](#7.-float()-vs-*1.0)
-8.  [Remove Duplicates](#8.-Remove-Duplicates)
-9.  [Sorting](#9.-Sorting)
-10. [Checking for True](#10.-Checking-for-True)
-11. [`list()` or `[]`, `dict()` or `{}`](#11.-list-or--dict-or-)	
+1.  [`timeit` setup configuration](#1-timeit-setup-and-configuration)
+2.  [Count elements in a list](#2-Count-elements-in-a-list)
+3.  [Fliter List](#3-Fliter-List)
+4.  [Permission or Forgiveness 1](#4-Permission-or-Forgiveness-1)
+5.  [Permission or Forgiveness 2](#5-Permission-or-Forgiveness-2)
+6.  [Membership testing](#6-Membership-testing)
+7.  [`float()` vs `*1.0`](#7-float()-vs-*1.0)
+8.  [Remove Duplicates](#8-Remove-Duplicates)
+9.  [Sorting](#9-Sorting)
+10. [Checking for True](#10-Checking-for-True)
+11. [`list()` or `[]`, `dict()` or `{}`](#11-list-or--dict-or-)	
 ### 1. `timeit` setup and configuration ([back to top](#Fast-Snappits))
 
 #### Example code for `timeit`

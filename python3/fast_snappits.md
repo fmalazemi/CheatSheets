@@ -63,7 +63,7 @@ def dummy(): #just put all your code in a dummy function to easily pass it as a 
 	pass
 dis.dis(dummy)
 ```
-[##### top](#-Fast-Snappits)
+[top](#Fast-Snappits)
 
 
 

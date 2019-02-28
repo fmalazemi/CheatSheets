@@ -6,7 +6,7 @@ Below are several performance benchmarks between different implementations for t
 4. [Permission or Forgiveness 1](#Permission-or-Forgiveness-1)
 5. [Permission or Forgiveness 2](#Permission-or-Forgiveness-2)
 6. [Membership testing](#Membership-testing)
-7. [`float()` vs `*1.0`](#`float()` vs `*1.0`)
+7. [`float()` vs `*1.0`](#`float()`-vs-`*1.0`)
 ### Timeit code
 
 

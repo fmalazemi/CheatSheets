@@ -12,7 +12,7 @@ Below are several performance benchmarks between different implementations for t
 9.  [Sorting](#Sorting)
 10. [Checking for True](#Checking-for-True)
 11. [`list()` or `[]`, `dict()` or `{}`](#list-or--dict-or-)	
-### `timeit` setup and configuration
+### 1. `timeit` setup and configuration ([back to top](#Fast-Snappits))
 
 #### Example code for `timeit`
 ```python
@@ -55,7 +55,9 @@ print(fast*ns, "nanoseconds")
 print("Speedup :", slow/fast, " times")
 
 ```
+#### `dis` example
 In some cases, we may need to look at assembly code to understand why one snappit is faster than the other. 
+
 ```python
 
 import dis
@@ -63,7 +65,7 @@ def dummy(): #just put all your code in a dummy function to easily pass it as a 
 	pass
 dis.dis(dummy)
 ```
-[top](#Fast-Snappits)
+
 
 
 

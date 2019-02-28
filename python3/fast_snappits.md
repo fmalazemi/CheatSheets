@@ -72,7 +72,7 @@ dis.dis(dummy)
 
 
 
-
+---
 
 
 
@@ -161,7 +161,7 @@ SLOW CODE : 2.166 ms.
 FAST CODE : 0.822 ms.
 2.09 times speedup
 ```
-
+---
 
 ### 5. Permission or Forgiveness 2
 ([back to top](#Fast-Snappits))

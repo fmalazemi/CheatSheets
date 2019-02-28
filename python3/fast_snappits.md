@@ -24,21 +24,35 @@ my_setup = '''
 pass
 '''
 
-my_code = '''
+slow_code = '''
 pass
 '''
+fast_code = '''
+pass
+'''
+
 repeat = 100
 
-exec_time = timeit.timeit(setup = my_setup, stmt = my_code, number = repeat)
-#exec_time holds the number of seconds for executing my_code for "repeat" number of times. 
-print(exec_time, seconds)
+slow = timeit.timeit(setup = my_setup, stmt = slow_code, number = repeat) 
+fast = timeit.timeit(setup = my_setup, stmt = fast_code, number = repeat)
+#slow & fast holds the number of seconds for executing my_code for "repeat" number of times. 
+print(slow, seconds)
+print(fast, seconds)
 
 milliseconds = 10**3
-print(exec_time*ns, "milliseconds")
+print(slow*milliseconds, "milliseconds")
+print(fast*milliseconds, "milliseconds")
+
 microseconds = 10**6
-print(exec_time*ns, "microseconds")
+print(slow*microseconds, "microseconds")
+print(fast*microseconds, "microseconds")
+
 ns = 10**9
-print(exec_time*ns, "nanoseconds")
+print(slow*ns, "nanoseconds")
+print(fast*ns, "nanoseconds")
+
+print("Speedup :", slow/fast, " times")
+
 ```
 In some cases, we may need to look at assembly code to understand why one snappit is faster than the other. 
 ```python

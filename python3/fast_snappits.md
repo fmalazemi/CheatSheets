@@ -10,7 +10,7 @@ Below are several performance benchmarks between different implementations for t
 8.  [Remove Duplicates](#Remove-Duplicates)
 9.  [Sorting](#Sorting)
 10. [Checking for True](#Checking-for-True)
-11. [`list()` or `[]`, `dict()` or `{}`](#list()-or-[],-dict()-or-{})
+11. [`list()` or `[]`, `dict()` or `{}`](#list-or--dict-or-)
 ### `timeit` setup and configuration
 
 #### Example code for `timeit`

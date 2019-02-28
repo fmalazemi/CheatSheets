@@ -1,3 +1,4 @@
+# Fast Snappits
 Below are several performance benchmarks between different implementations for the same task in Python 3 (version 3.6.1). Most of the snappits are extracted from the [Youtube lecture by Sebastian Witowski](https://www.youtube.com/watch?v=YjHsOrOOSuI&t=611s). 
 
 1.  [`timeit` setup configuration](#timeit-setup-and-configuration)
@@ -10,7 +11,7 @@ Below are several performance benchmarks between different implementations for t
 8.  [Remove Duplicates](#Remove-Duplicates)
 9.  [Sorting](#Sorting)
 10. [Checking for True](#Checking-for-True)
-11. [`list()` or `[]`, `dict()` or `{}`](#list-or--dict-or-)
+11. [`list()` or `[]`, `dict()` or `{}`](#list-or--dict-or-)	
 ### `timeit` setup and configuration
 
 #### Example code for `timeit`
@@ -62,6 +63,8 @@ def dummy(): #just put all your code in a dummy function to easily pass it as a 
 	pass
 dis.dis(dummy)
 ```
+[##### top](#-Fast-Snappits)
+
 
 
 
@@ -323,6 +326,7 @@ if b:
 	pass
 ```
 #### RESULTS
+[Home](
 ```
 SLOW_CODE_1 : 934.99 ns
 SLOW_CODE_2 : 544.00 ns

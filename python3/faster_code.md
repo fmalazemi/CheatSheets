@@ -156,6 +156,7 @@ pass
 def float_func(n):
 	return float(n)
 ```
+`dis.dis(float_func)` output
 ```nasm
 0 LOAD_GLOBAL              0 (float)
 2 LOAD_FAST                0 (n)
@@ -168,6 +169,7 @@ def float_func(n):
 def mul_by_float(n):
 	return n * 1.0
 ```
+`dis.dis(mul_by_float)` output
 ```nasm
 0 LOAD_FAST                0 (n)
 2 LOAD_CONST               1 (1.0)

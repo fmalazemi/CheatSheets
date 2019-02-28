@@ -12,7 +12,8 @@ Below are several performance benchmarks between different implementations for t
 9.  [Sorting](#9-Sorting)
 10. [Checking for True](#10-Checking-for-True)
 11. [`list()` or `[]`, `dict()` or `{}`](#11-list-or--dict-or-)	
-### 1. `timeit` setup and configuration ([back to top](#Fast-Snappits))
+### 1. `timeit` setup and configuration 
+([back to top](#Fast-Snappits))
 
 #### Example code for `timeit`
 ```python
@@ -77,7 +78,7 @@ dis.dis(dummy)
 
 
 ### 2. Count elements in a list 
-_([back to top](#Fast-Snappits))_
+([back to top](#Fast-Snappits))
 #### SETUP CODE
 ```python
 MILLION_CELL_LIST = [x for x in range(10**6)]
@@ -102,7 +103,7 @@ FAST CODE = 3.49 ns
 ---
 
 ### 3. Fliter List
-_([back to top](#Fast-Snappits))_
+([back to top](#Fast-Snappits))
 #### SETUP CODE:
 ```python
 MILLION_CELL_LIST = [x for x in range(10**6)]
@@ -132,7 +133,8 @@ SPEEDUP     : 1.71 times
 
 ---
 
-### 4. Permission or Forgiveness 1 ([back to top](#Fast-Snappits))
+### 4. Permission or Forgiveness 1 
+([back to top](#Fast-Snappits))
 If your code will rarely raise an expecetion try-except will be faster. 
 
 ### SETUP CODE:
@@ -161,7 +163,8 @@ FAST CODE : 0.822 ms.
 ```
 
 
-### 5. Permission or Forgiveness 2 ([back to top](#Fast-Snappits))
+### 5. Permission or Forgiveness 2
+([back to top](#Fast-Snappits))
 If your code will raise an expecetion most of the time, try-except will be slower. 
 
 ### SETUP CODE:
@@ -191,7 +194,8 @@ SPEEDUP   : 1.3 times.
 
 ---
 
-### 6. Membership testing ([back to top](#Fast-Snappits))
+### 6. Membership testing
+([back to top](#Fast-Snappits))
 
 #### SETUP CODE:
 ```python
@@ -219,7 +223,8 @@ SPEEDUP   :  1.98 times.
 ```
 ---
 
-### 7. `float()` vs `*1.0` ([back to top](#Fast-Snappits))
+### 7. `float()` vs `*1.0`
+([back to top](#Fast-Snappits))
 Using function float to convert an int to float will require calling the function `float()` and then execute it. However, multiplying by `1.0` avoid loading any function and directly apply multiplication op. Check assembly code for both. 
 
 #### SETUP CODE:
@@ -259,7 +264,8 @@ FAST CODE: 15.77 ns.
 SPEEDUP  : 9.33 times.
 ```
 ---
-### 8. Remove Duplicates ([back to top](#Fast-Snappits))
+### 8. Remove Duplicates
+([back to top](#Fast-Snappits))
 
 #### SETUP
 ```python
@@ -285,7 +291,8 @@ FAST CODE :   0.751 milliseconds
 Speedup: 654 times
 ```
 ---
-### 9. Sorting ([back to top](#Fast-Snappits))
+### 9. Sorting
+([back to top](#Fast-Snappits))
 Both codes are the same except CODE_1 has an overhead of creating a new list. 
 If we repeat this benchmark we will notice a slowness in CODE_1 due to creating a new list. 
 #### SETUP:
@@ -310,7 +317,8 @@ CODE_2 : 621.25 milliseconds
 SPEEDUP: 0 
 ```
 ---
-### 10. Checking for True ([back to top](#Fast-Snappits))
+### 10. Checking for True
+([back to top](#Fast-Snappits))
 In the `FAST_CODE` we dont need to compare `b` with `True`, so it need less number of instructions. 
 #### SETUP:
 ```python
@@ -342,7 +350,8 @@ SPEEDUP     : 2.42 times from SLOW_CODE_1 to FAST_CODE
 ```
 ---
 
-### 11. `list()` or `[]`, `dict()` or `{}` ([back to top](#Fast-Snappits))
+### 11. `list()` or `[]`, `dict()` or `{}`
+([back to top](#Fast-Snappits))
 Using `list()` will force to load the function and then build it. Alternatively, `[]` can directly build a list. 
 #### SLOW_CODE:
 ```python

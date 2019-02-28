@@ -1,6 +1,6 @@
 Below are several performance benchmarks between different implementations for the same task in Python 3 (version 3.6.1). Most of the snappits are extracted from the [Youtube lecture by Sebastian Witowski](https://www.youtube.com/watch?v=YjHsOrOOSuI&t=611s). 
 
-1. [Count elements in a list](###Count-elements-in-a-list)
+1. [Count elements in a list](### Count-elements-in-a-list)
 
 
 

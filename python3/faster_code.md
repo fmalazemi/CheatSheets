@@ -15,6 +15,7 @@ for element in MILLION:
   how_many += 1
 print(how_many)
 ```
+### Output
 ```
 0.05464205500175012 Seconds 54.64205500175012 mi
 ```

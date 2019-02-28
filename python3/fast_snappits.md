@@ -7,7 +7,7 @@ Below are several performance benchmarks between different implementations for t
 4.  [Permission or Forgiveness 1](#4-Permission-or-Forgiveness-1)
 5.  [Permission or Forgiveness 2](#5-Permission-or-Forgiveness-2)
 6.  [Membership testing](#6-Membership-testing)
-7.  [`float()` vs `*1.0`](#7-float()-vs-*10)
+7.  [`float()` vs `*1.0`](#7-float-vs-*10)
 8.  [Remove Duplicates](#8-Remove-Duplicates)
 9.  [Sorting](#9-Sorting)
 10. [Checking for True](#10-Checking-for-True)

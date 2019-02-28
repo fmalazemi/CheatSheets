@@ -76,7 +76,8 @@ dis.dis(dummy)
 
 
 
-### 2. Count elements in a list ([back to top](#Fast-Snappits))
+### 2. Count elements in a list 
+_([back to top](#Fast-Snappits))_
 #### SETUP CODE
 ```python
 MILLION_CELL_LIST = [x for x in range(10**6)]
@@ -100,7 +101,8 @@ FAST CODE = 3.49 ns
 ```
 ---
 
-### 3. Fliter List ([back to top](#Fast-Snappits))
+### 3. Fliter List
+_([back to top](#Fast-Snappits))_
 #### SETUP CODE:
 ```python
 MILLION_CELL_LIST = [x for x in range(10**6)]

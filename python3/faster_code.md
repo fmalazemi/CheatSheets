@@ -1,5 +1,4 @@
-All based on Youtube Talk. Link
-OS: 
+All based on Youtube Talk. Link https://www.youtube.com/watch?v=YjHsOrOOSuI&t=611s
 Python 3 version:
 
 ## Timeit code
@@ -263,6 +262,25 @@ SLOW_CODE_2 : 544.00 ns
 FAST_CODE   : 385.99 ns
 SPEEDUP     : 2.42 times from SLOW_CODE_1 to FAST_CODE
 ```
+---
+
+## `list()` or `[]`, `dict()` or `{}`
+Using `list()` will force to load the function and then build it. Alternatively, `[]` can directly build a list. 
+#### SLOW_CODE:
+```python
+list()
+```
+#### FAST_CODE:
+```python
+[]
+```
+#### RESULTS:
+```
+SLOW_CODE : 1423 ns.
+FAST CODE : 496  ns.
+SPEEDUP   : 2.86 times. 
+```
+
 
 
 

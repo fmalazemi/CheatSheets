@@ -13,6 +13,46 @@ Below are several performance benchmarks between different implementations for t
 11. [`list()` or `[]`, `dict()` or `{}`](#`list()`-or-`[]`,-`dict()`-or-`{}`)
 ### `timeit` setup and configuration
 
+#### Example code for `timeit`
+```python
+import timeit
+
+repeat = 100
+
+#setup up run only once
+my_setup = '''
+pass
+'''
+
+my_code = '''
+pass
+'''
+repeat = 100
+
+exec_time = timeit.timeit(setup = my_setup, stmt = my_code, number = repeat)
+#exec_time holds the number of seconds for executing my_code for "repeat" number of times. 
+print(exec_time, seconds)
+
+milliseconds = 10**3
+print(exec_time*ns, "milliseconds")
+microseconds = 10**6
+print(exec_time*ns, "microseconds")
+ns = 10**9
+print(exec_time*ns, "nanoseconds")
+```
+In some cases, we may need to look at assembly code to understand why one snappit is faster than the other. 
+```python
+
+import dis
+def dummy(): #just put all your code in a dummy function to easily pass it as a parameter to dis. 
+	pass
+dis.dis(dummy)
+```
+
+
+
+
+
 
 
 
@@ -194,8 +234,8 @@ SLOW CODE: 147.16 ns.
 FAST CODE: 15.77 ns.
 SPEEDUP  : 9.33 times.
 ```
-
-## Remove Duplicates
+---
+### Remove Duplicates
 
 #### SETUP
 ```python

@@ -1,13 +1,17 @@
 Below are several performance benchmarks between different implementations for the same task in Python 3 (version 3.6.1). Most of the snappits are extracted from the [Youtube lecture by Sebastian Witowski](https://www.youtube.com/watch?v=YjHsOrOOSuI&t=611s). 
 
-1. [`timeit` setup](#timeit-setup)
-2. [Count elements in a list](#Count-elements-in-a-list)
-3. [Fliter List](#Fliter-List)
-4. [Permission or Forgiveness 1](#Permission-or-Forgiveness-1)
-5. [Permission or Forgiveness 2](#Permission-or-Forgiveness-2)
-6. [Membership testing](#Membership-testing)
-7. [`float()` vs `*1.0`](#`float()`-vs-`*1.0`)
-### Timeit code
+1.  [`timeit` setup configuration](#`timeit`-setup-configuration)
+2.  [Count elements in a list](#Count-elements-in-a-list)
+3.  [Fliter List](#Fliter-List)
+4.  [Permission or Forgiveness 1](#Permission-or-Forgiveness-1)
+5.  [Permission or Forgiveness 2](#Permission-or-Forgiveness-2)
+6.  [Membership testing](#Membership-testing)
+7.  [`float()` vs `*1.0`](#`float()`-vs-`*1.0`)
+8.  [Remove Duplicates](#Remove-Duplicates)
+9.  [Sorting](#Sorting)
+10. [Checking for True](#Checking-for-True)
+11. [`list()` or `[]`, `dict()` or `{}`](#`list()`-or-`[]`,-`dict()`-or-`{}`)
+### `timeit` setup and configuration
 
 
 

@@ -50,10 +50,10 @@ list(filter(lambda x : x % 2, MILLION))
 ```
 #### RESULTS:
 ```
-SLOW CODE 1 : 0.096 seconds (= 96.78 mi.)
-SLOW CODE 2 : 0.146 seconds (=146.65 mi.)
-FAST CODE   : 0.058 seconds (= 58.088 mi.)
-71% speedup from SLOW CODE 1 (1.71 speedup.) 
+SLOW CODE 1 :  96.78  mi.
+SLOW CODE 2 : 146.65  mi.
+FAST CODE   :  58.088 mi.
+SPEEDUP     : 1.71 times
 ```
 
 ---
@@ -81,8 +81,8 @@ except AttributeError:
 ```
 #### RESULTS:
 ```
-SLOW CODE : 1.46e-06 seconds (= 2.166 ms.)
-FAST CODE : 6.95e-07 seconds (= 0.822 ms.)
+SLOW CODE : 2.166 ms.
+FAST CODE : 0.822 ms.
 2.09 times speedup
 ```
 
@@ -110,9 +110,9 @@ if hasattr(foo, 'hello'):
 ```
 #### RESULTS:
 ```
-SLOW CODE : 6.134e-07 seconds (= 613.49 ns.)
-FAST CODE : 4.705e-07 seconds (= 470.57 ms.)
-30% speedup
+SLOW CODE : 613.49 ms.
+FAST CODE : 470.57 ms.
+SPEEDUP   : 1.3 times.
 ```
 
 ## Membership testing
@@ -137,9 +137,9 @@ number in MILLION
 ```
 #### RESULTS: 
 ```
-0.0176 seconds (=17.60 Milliseconds.)
-0.0088 seconds (= 8.86 Milliseconds.)
-1.98 speedup. 
+SLOW CODE : 17.60 milliseconds.
+FAST CODE :  8.86 milliseconds.
+SPEEDUP   :  1.98 times. 
 ```
 ---
 
@@ -178,9 +178,100 @@ def mul_by_float(n):
 ```
 #### RESULTS: 
 ```
-SLOW CODE: 147.16 ns
-FAST CODE: 15.77 ns
-9.33 times speedup
+SLOW CODE: 147.16 ns.
+FAST CODE: 15.77 ns.
+SPEEDUP  : 9.33 times.
 ```
+
+## Remove Duplicates
+
+#### SETUP
+```python
+import random
+L = [random.randint(1,10000) for x in range(10**4)] 
+```
+
+#### SLOW CODE:
+```python
+unique = []
+for e in L:
+	if e not in unique:
+		unique.append(e)
+```
+#### FAST CODE:
+```python
+unique = set(L)
+```
+#### RESULTS:
+```
+SLOW CODE : 491.692 milliseconds
+FAST CODE :   0.751 milliseconds
+Speedup: 654 times
+```
+---
+## Sorting
+Both codes are the same except CODE_1 has an overhead of creating a new list. 
+If we repeat this benchmark we will notice a slowness in CODE_1 due to creating a new list. 
+#### SETUP:
+```python
+import random
+MILLION = [random.randint(1,100000) for x in range(10**6)] 
+```
+
+#### CODE_1:
+```python
+sorted(MILLION)
+```
+
+#### CODE_2:
+```python
+MILLION.sort()
+```
+#### RESULTS:
+```
+CODE_1 : 621.48 milliseconds
+CODE_2 : 621.25 milliseconds
+SPEEDUP: 0 
+```
+---
+## Checking for True
+In the `FAST_CODE` we dont need to compare `b` with `True`, so it need less number of instructions. 
+#### SETUP:
+```python
+b = True
+```
+
+#### SLOW_CODE_1:
+```python
+if b == True:
+	pass
+```
+#### SLOW_CODE_2:
+```python
+if b is True:
+	pass
+```
+#### FAST_CODE:
+```python
+if b:
+	pass
+```
+#### RESULTS
+```
+SLOW_CODE_1 : 934.99 ns
+SLOW_CODE_2 : 544.00 ns
+FAST_CODE   : 385.99 ns
+SPEEDUP     : 2.42 times from SLOW_CODE_1 to FAST_CODE
+```
+
+
+
+
+
+
+
+
+
+
 
 

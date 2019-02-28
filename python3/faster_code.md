@@ -17,20 +17,13 @@ for element in MILLION:
   how_many += 1
 print(how_many)
 ```
-#### OUTPUT
-```
-0.05464205500175012 Seconds ( = 54.61 milli seconds)
-```
 #### FAST CODE:
 ```python
 print(len(MILLION))
 ```
-#### OUTPUT
+##### Speed up 
 ```
-3.492001269478351e-06 Seconds ( = 3.49 ns)
-```
-
-Speed up 
-```
-15717 times faster
+15717 times faster 
+Slow = 54.61 milli seconds
+Fast = = 3.49 ns
 ```

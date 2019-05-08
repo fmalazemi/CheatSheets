@@ -1,5 +1,5 @@
-How to format dynamically your string:
+# How to format dynamically your string
 
 
-[] Old ways:
+1. Old ways:
 

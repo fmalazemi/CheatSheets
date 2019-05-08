@@ -1,4 +1,4 @@
-# How to format dynamically your string
+# String formatting
 
 
 ### 1. The very old way ```%```:

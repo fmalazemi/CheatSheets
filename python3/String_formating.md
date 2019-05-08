@@ -8,13 +8,13 @@
   ```
 
 ### 2. The Not very old way ```format```:
-    ```python3
+    ```python
     firstName = "Albert"
     lastName = "Einstein"
     print("Any fool can know. The point is to understand.-- {} {}".format(firstName, lastName))
     ```
 ### 3. The New Way is the ```f``` string:
-    ```python3
+    ```python
     firstName = "Albert"
     lastName = "Einstein"
     print(f'Weak people revenge. Strong people forgive. Intelligent people ignore. -- {firstName} {lastName}')

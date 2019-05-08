@@ -2,23 +2,23 @@
 
 
 ### 1. The very old way ```%```:
-  ```python
+  ```python3
     Name = "Aristotle"
-    print("Knowing yourself is the beginning of all wisdom -- %s "% Name
+    print("Knowing yourself is the beginning of all wisdom -- %s "% Name)
   ```
 
 ### 2. The Not very old way ```format```:
-    ```python
-    firstName = "Albert"
-    lastName = "Einstein"
-    print("Any fool can know. The point is to understand.-- {} {}".format(firstName, lastName))
+    ```python3
+      firstName = "Albert"
+      lastName = "Einstein"
+      print("Any fool can know. The point is to understand.-- {} {}".format(firstName, lastName))
     ```
 ### 3. The New Way is the ```f``` string:
     ```python
-    firstName = "Albert"
-    lastName = "Einstein"
-    print(f'Weak people revenge. Strong people forgive. Intelligent people ignore. -- {firstName} {lastName}')
-   ```
+      firstName = "Albert"
+      lastName = "Einstein"
+      print(f'Weak people revenge. Strong people forgive. Intelligent people ignore. -- {firstName} {lastName}')
+    ```
    * Add  leading spaces to an integer:
    ```python3
    for i in range(3):

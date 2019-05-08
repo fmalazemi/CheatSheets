@@ -2,4 +2,8 @@
 
 
 1. Old ways:
-⋅⋅* Unordered sub-list. 
+  * ```format```:
+    ```
+    city = "Rome"
+    print("All paths lead to {}.".format(city)
+    ```

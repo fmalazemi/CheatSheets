@@ -1,19 +1,19 @@
 # How to format dynamically your string
 
 
-1. The very old way ```%```:
+### 1. The very old way ```%```:
   ```python
     Name = "Aristotle"
     print("Knowing yourself is the beginning of all wisdom -- %s "% Name
   ```
 
-2. The Not very old way ```format```:
+### 2. The Not very old way ```format```:
     ```python3
     firstName = "Albert"
     lastName = "Einstein"
     print("Any fool can know. The point is to understand.-- {} {}".format(firstName, lastName))
     ```
-3. The New Way is the ```f``` string:
+### 3. The New Way is the ```f``` string:
     ```python3
     firstName = "Albert"
     lastName = "Einstein"

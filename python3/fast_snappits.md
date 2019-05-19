@@ -12,6 +12,7 @@ Below are several performance benchmarks between different implementations for t
 9.  [Sorting](#9-Sorting)
 10. [Checking for True](#10-Checking-for-True)
 11. [`list()` or `[]`, `dict()` or `{}`](#11-list-or--dict-or-)	
+12. [Loop in reverse order](#12-loop-in-reverse-order)
 ### 1. `timeit` setup and configuration 
 ([back to top](#Fast-Snappits))
 
@@ -368,6 +369,28 @@ FAST CODE : 496  ns.
 SPEEDUP   : 2.86 times. 
 ```
 
+### 12. Loop in reverse order
+#### SETUP
+```python
+repeat = 100
+x = [x for x in range(10**7)]
+```
+#### SLOW
+```python
+for i in range(len(x)-1, -1, -1):
+	pass
+```
+#### Fast
+```python
+for i in reversed(x):
+	pass
+```
+#### RESULTS:
+```
+SLOW_CODE : 260.40 ms.
+FAST_CODE : 152.12 ms.
+SPEEDUP   : 1.71 times.
+```
 
 
 

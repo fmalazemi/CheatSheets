@@ -41,17 +41,7 @@ class Tree(object):
 			cur = cur.left if val > cur.val else cur.right
 		return False 
 	def remove(val):
-		if not self.root:
-			print("Tree is empty.")
-		parent = None
-		cur = self.root
-		while cur:
-			if cur.val == val:
-				break
-			parent = cur
-			cur = cur.left if node.val > cur.val else cur.right
-		if not cur:
-			print(val, "not in the Tree.")
+		pass
 	def inorder(self):
 		stack = [self.root]
 		cur = self.root

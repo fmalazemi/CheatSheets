@@ -1,4 +1,4 @@
-from multiNbyM import multiNbyN
+from multiWithoutStringOfDigits import multiNbyN
 
 
 import random
